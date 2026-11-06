@@ -1,0 +1,557 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Melila Grama Panchayat | Kollam, Kerala</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8f3;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(rgba(0,60,35,0.85),
+    rgba(0,60,35,0.85)),
+    url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e');
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: #145c37;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #b8e986;
+}
+
+/* SECTIONS */
+
+section {
+    padding: 55px 8%;
+}
+
+section h2 {
+    color: #176b43;
+    font-size: 29px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #8bc34a;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* INTRODUCTION */
+
+.intro {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+/* INFORMATION CARDS */
+
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    border-top: 4px solid #32965c;
+}
+
+.info-card h3 {
+    color: #176b43;
+    margin-bottom: 10px;
+}
+
+.info-card h2 {
+    border: none;
+    color: #32965c;
+    font-size: 25px;
+}
+
+/* MAP */
+
+.map-container {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 8px;
+}
+
+.map-button {
+    display: inline-block;
+    background: #176b43;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.map-button:hover {
+    background: #32965c;
+}
+
+/* GALLERY */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.04);
+}
+
+.photo-caption {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #10442c;
+    color: white;
+    padding: 40px 8%;
+    text-align: center;
+}
+
+footer h2 {
+    margin-bottom: 15px;
+}
+
+footer p {
+    text-align: center;
+    margin: 8px;
+}
+
+footer a {
+    color: #b8e986;
+    text-decoration: none;
+}
+
+footer .copyright {
+    margin-top: 25px;
+    border-top: 1px solid #6a9278;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 768px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+        font-size: 13px;
+    }
+
+    section {
+        padding: 35px 5%;
+    }
+
+    .map-container iframe {
+        height: 450px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<h1>MELILA GRAMA PANCHAYAT</h1>
+
+<p>Kollam District | Kerala | India</p>
+
+<p>Explore the Geography, Environment and Development of Melila</p>
+
+</header>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#geography">Geography</a>
+
+<a href="#map">Interactive Map</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+
+<!-- HOME -->
+
+<section id="home">
+
+<div class="intro">
+
+<h2>Welcome to Melila Grama Panchayat</h2>
+
+<p>
+Melila Grama Panchayat is a rural local self-government institution
+located in Kottarakkara Taluk of Kollam District, Kerala. It is
+situated in the southern part of Kerala and forms an important
+rural administrative region of the district.
+</p>
+
+<p>
+The region is characterised by its natural greenery, settlements,
+agricultural activities, roads and local water resources. Agriculture
+and other traditional occupations have contributed to the livelihood
+of the people. In recent years, the area has also experienced changes
+in settlement patterns, transportation and infrastructure.
+</p>
+
+<p>
+Melila Grama Panchayat plays an important role in local administration,
+rural development, public services and the welfare of the community.
+This website provides geographical information, photographs and an
+interactive WebGIS platform to explore the different features of
+Melila Grama Panchayat.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Melila</h2>
+
+<p>
+Melila is located in the eastern part of Kottarakkara Taluk in
+Kollam District. It comes under Vettikkavala Block Panchayat.
+The administrative headquarters of Kollam District is situated
+to the west of the region.
+</p>
+
+<p>
+Melila is connected with neighbouring settlements through a network
+of roads. The region has residential areas, agricultural lands,
+educational institutions, religious centres and other public
+facilities. The local administration supports infrastructure
+development and community welfare.
+</p>
+
+</section>
+
+
+<!-- GEOGRAPHICAL INFORMATION -->
+
+<section id="geography">
+
+<h2>Geographical Information</h2>
+
+<p>
+The following details provide a general geographical and
+administrative overview of Melila Grama Panchayat.
+</p>
+
+<div class="info-container">
+
+<div class="info-card">
+<h3>District</h3>
+<h2>Kollam</h2>
+</div>
+
+<div class="info-card">
+<h3>Taluk</h3>
+<h2>Kottarakkara</h2>
+</div>
+
+<div class="info-card">
+<h3>Block Panchayat</h3>
+<h2>Vettikkavala</h2>
+</div>
+
+<div class="info-card">
+<h3>Geographical Area</h3>
+<h2>18.58 km²</h2>
+</div>
+
+<div class="info-card">
+<h3>Population</h3>
+<h2>21,936</h2>
+<p>As per Kerala LSGD basic information</p>
+</div>
+
+<div class="info-card">
+<h3>Number of Wards</h3>
+<h2>15</h2>
+</div>
+
+<div class="info-card">
+<h3>State</h3>
+<h2>Kerala</h2>
+</div>
+
+<div class="info-card">
+<h3>Country</h3>
+<h2>India</h2>
+</div>
+
+</div>
+
+<br>
+
+<h2>Physical and Human Geography</h2>
+
+<p>
+<strong>Location:</strong> Melila is situated in Kottarakkara
+Taluk, Kollam District, Kerala.
+</p>
+
+<p>
+<strong>Relief and Topography:</strong> The landscape consists
+of gently undulating terrain and lowland areas typical of the
+midland region of Kerala.
+</p>
+
+<p>
+<strong>Climate:</strong> Melila experiences a tropical monsoon
+climate with seasonal rainfall and warm temperatures.
+</p>
+
+<p>
+<strong>Vegetation:</strong> The area has tropical vegetation,
+home gardens, agricultural landscapes and scattered tree cover.
+</p>
+
+<p>
+<strong>Land Use:</strong> Residential settlements, agricultural
+lands, roads and public infrastructure form important land-use
+categories.
+</p>
+
+<p>
+<strong>Transportation:</strong> Road networks connect Melila
+with Kottarakkara and neighbouring settlements.
+</p>
+
+</section>
+
+
+<!-- INTERACTIVE MAP -->
+
+<section id="map">
+
+<h2>Interactive WebGIS Map of Melila</h2>
+
+<p>
+Explore the geographical features and spatial distribution
+of different facilities within Melila Grama Panchayat through
+the interactive WebGIS platform.
+</p>
+
+<div class="map-container">
+
+<iframe
+src="https://manikuttan970.github.io/panch/"
+title="Melila Grama Panchayat Interactive WebGIS Map"
+loading="lazy"
+allowfullscreen>
+</iframe>
+
+</div>
+
+<center>
+
+<a class="map-button"
+href="https://manikuttan970.github.io/panch/"
+target="_blank">
+
+Open Interactive Map in Full Screen
+
+</a>
+
+</center>
+
+</section>
+
+
+<!-- PHOTO GALLERY -->
+
+<section id="gallery">
+
+<h2>Photo Gallery</h2>
+
+<p>
+A visual collection representing the natural environment,
+landscape and rural surroundings of Melila Grama Panchayat.
+</p>
+
+<div class="gallery">
+
+<div>
+<img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e"
+alt="Green forest landscape">
+<div class="photo-caption">Natural Environment</div>
+</div>
+
+<div>
+<img src="https://images.unsplash.com/photo-1511497584788-876760111969"
+alt="Trees and greenery">
+<div class="photo-caption">Green Vegetation</div>
+</div>
+
+<div>
+<img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8"
+alt="Rural landscape">
+<div class="photo-caption">Rural Landscape</div>
+</div>
+
+<div>
+<img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef"
+alt="Agricultural landscape">
+<div class="photo-caption">Agricultural Landscape</div>
+</div>
+
+</div>
+
+<p style="margin-top:20px;">
+Note: The above photographs are illustrative images of natural
+and rural landscapes, not verified photographs of Melila.
+Replace them with original photographs of Melila Grama Panchayat
+for an authentic local photo gallery.
+</p>
+
+</section>
+
+
+<!-- CONTACT FOOTER -->
+
+<footer id="contact">
+
+<h2>Contact Information</h2>
+
+<p><strong>Website:</strong> Melila Grama Panchayat Geographic Information Portal</p>
+
+<p><strong>Prepared by:</strong> Malavika</p>
+
+<p>
+<strong>Email:</strong>
+<a href="mailto:msmanikuttan06@gmail.com">
+msmanikuttan06@gmail.com
+</a>
+</p>
+
+<p>
+<strong>Study Area:</strong> Melila Grama Panchayat,
+Kollam District, Kerala
+</p>
+
+<div class="copyright">
+
+<p>
+© 2026 Melila Grama Panchayat | Geographic Information Portal
+</p>
+
+<p>Designed for geographical information and spatial exploration.</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>
+```
